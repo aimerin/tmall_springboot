@@ -1,0 +1,136 @@
+html{
+	padding: 0;
+	margin: 0;
+}
+body{
+	padding: 0;
+	margin :0 ;
+}
+header{
+	height: 100px;
+	background-color: #07cbc9;
+}
+header>p.title_one{
+	font-size: 60px;
+	font-weight: bold;
+	font-family: "黑体",serief;
+	color: #FFFF00;
+	float: left;
+	margin: 5px 0 25px 25px;
+}
+header>p.title_two{
+	font-size: 40px;
+	font-weight: bold;
+	font-family: "黑体",serief;
+	color: #FFFF00;
+	float: left;
+	margin:25px 25px 25px -8px; 
+}
+header>nav{
+	display: inline-block;
+
+}
+header>nav>a{
+	text-decoration: none;
+	font-size: 25px;
+	line-height: 100px;
+	padding: 35px 25px;
+	color: #ffffff;
+}
+header>nav>a:hover{
+	color: #f54c53;
+	background: #fff;
+}
+/*登录/注册*/
+a.btn-cta{
+	float: right;
+	color: #f54c53;
+	margin:40px 25px auto auto;
+}
+a.btn-cta span{
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  padding: 4px 20px;
+  color: #fff;
+  display: -moz-inline-stack;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  border-radius: 7px;
+}
+a.btn-cta:hover span{
+  background: #fff;
+  color: #f54c53;
+}
+/*搜索框*/
+.input-group {
+				width: 25%;
+				height: 50px ;
+				float: right;
+				margin-top: 0;
+				margin-bottom: 0;
+				/*border: 1px solid #cccccc;*/
+				padding: 25px 50px 25px 50px;
+			}
+
+			input.search[type="text"] {
+				height: 48px ;
+				width: 55% ;
+				background: #FFFFFF;
+				font-size: 14px;
+				float: left;
+				border: 0px solid #FFF;/* 必须加 可能配合下一句使用 */
+				border-left: 1px solid #c0c0c0;
+				padding-left: 15px;
+				outline: none;
+			}
+			input,
+			select,
+			a:focus {
+				outline: none;
+			}
+
+			button[type="submit"] {
+				height: 50px;
+				width: 14%;
+				background: #2699FB;
+				border: 0px solid #ff7496;
+				float: right;
+				cursor: pointer;
+				background: url(../images/search.jpg) no-repeat center;
+				background-color: rgb(86,154,253);
+			}
+			select[id="select"] {
+				height: 50px;
+				width: 26%;
+				border: 0px solid #ff7496;
+				float: left;
+				color: #8f9db3;
+				background-color: #FFF;
+				padding-left: 15px;
+				/* 鼠标触碰光标变手势 */
+				cursor: pointer;
+				/* 清除默认样式 */
+				appearance: none;
+				-webkit-appearance: none;
+				-moz-appearance: none;
+				font-weight: bold;
+			}
+			/* 给select添加右侧下拉图标 */
+			div[class="select"]:after {
+				content: "";
+				width: 10%;
+				height: 50px;
+				background: url(../images/put_in.jpg) no-repeat center;
+				position: relative;
+				float: left;
+				margin-left: -40px;
+				top: 0px;
+				pointer-events: none;
+				
+			}

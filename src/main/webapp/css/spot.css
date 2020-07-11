@@ -1,0 +1,63 @@
+div.spot>h1{
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 15px;
+	font-weight: normal;
+}
+div.spot>p{
+	text-align: center;
+	color: #999999;
+	margin-bottom: 20px;
+}
+div.spot>div.spot_picture{
+	width: 80%;
+	margin: 0 auto;
+	height: 500px;
+	font-size:0;
+}
+div.spot>div.spot_picture div.ih-item{
+	display: inline-block;
+	width: 25%;
+	height: 50%;
+	position: relative;
+}
+div.spot>div.spot_picture div.ih-item div.img{
+	width: 100%;
+	height: 100%;
+}
+div.spot>div.spot_picture div.ih-item div.img>img{
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+div.spot>div.spot_picture div.ih-item div.info{
+	position: absolute;
+	top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    -moz-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+	width: 100%;
+	height: 100%;
+}
+.ih-item a:hover .info{
+	background: rgba(0,0,0,0.5);
+}
+
+div.spot>div.spot_picture div.ih-item div.info>h1{
+	position: absolute;
+	left: 0;
+	right:0;
+	top: 40%;
+	text-align: center;
+	font-size: 30px;
+	font-weight: bold;
+	color: #ffffff;
+	visibility: hidden;
+}
+.ih-item a:hover  .info>h1{
+	visibility: visible !important;
+}
