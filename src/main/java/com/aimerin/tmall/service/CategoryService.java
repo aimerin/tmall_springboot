@@ -4,7 +4,6 @@ import com.aimerin.tmall.dao.CategoryDao;
 import com.aimerin.tmall.pojo.Category;
 import com.aimerin.tmall.pojo.Product;
 import com.aimerin.tmall.util.Page4Navigator;
-import edu.princeton.cs.algs4.Cat;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.CacheConfig;
 import org.springframework.cache.annotation.CacheEvict;

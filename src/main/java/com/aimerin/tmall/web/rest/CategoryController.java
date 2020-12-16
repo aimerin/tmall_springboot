@@ -4,7 +4,9 @@ import com.aimerin.tmall.pojo.Category;
 import com.aimerin.tmall.service.CategoryService;
 import com.aimerin.tmall.util.ImageUtil;
 import com.aimerin.tmall.util.Page4Navigator;
-import edu.princeton.cs.algs4.Cat;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
+import io.swagger.annotations.ApiParam;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
@@ -16,14 +18,17 @@ import java.io.File;
 import java.io.IOException;
 import java.util.List;
 
+@Api(value="desc of class")
 @RestController
 public class CategoryController {
     @Autowired
     CategoryService categoryService;
 
+    /* 方法注解 */
+    @ApiOperation(value = "desc of method", notes = "")
     @GetMapping("/categories")
-    public Page4Navigator<Category> list(@RequestParam(value = "start", defaultValue = "0") int start,
-                                         @RequestParam(value = "size", defaultValue = "5") int size) {
+    public Page4Navigator<Category> list( /* 参数注解 */ @ApiParam(value = "desc of param" , required=true ) @RequestParam(value = "start", defaultValue = "0") int start,
+            /* 参数注解 */ @ApiParam(value = "desc of param" , required=true ) @RequestParam(value = "size", defaultValue = "5") int size) {
         start = start < 0 ? 0 : start;
         Page4Navigator<Category> page = categoryService.list(start, size, 5);//5表示导航分页最多有5个
         return page;
